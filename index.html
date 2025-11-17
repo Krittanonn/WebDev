@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>บริการพัฒนาเว็บไซต์ครบวงจร</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar บนสุด -->
+    <nav class="navbar">
+        <div class="logo">WEB DEV.</div>
+
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#services">บริการ</a>
+                <a href="#portfolio">ผลงาน</a>
+                <a href="#packages-section" class="nav-link">แพ็กเกจ</a>
+                <a href="#contact">ติดต่อ</a>
+            </div>
+            <a href="#quote" class="cta-button">ขอใบเสนอราคา</a>
+        </div>
+    </nav>
+
+    <!-- Section บริการ -->
+    <section class="services-section">
+
+        <!-- <div class="services-image fade-in">
+            <img src="img/Web.jpg" alt="ตัวอย่าง" />
+        </div>
+         -->
+        <div class="services-container fade-in">
+            <h2>บริการของเรา</h2>
+            <p class="indented">
+                ให้บริการพัฒนาเว็บไซต์สำหรับธุรกิจ ร้านค้าออนไลน์ และโปรไฟล์ส่วนตัว สวยเรียบง่าย และรองรับทุกอุปกรณ์ โดยคำนึงถึงประสบการณ์ผู้ใช้งานเป็นหลัก
+            </p>
+            <ul class="sub-items">
+                <li>ให้คำปรึกษาฟรีก่อนเริ่มงาน เพื่อให้ได้เว็บไซต์ตรงตามความต้องการ</li>
+                <li>ติดตามความคืบหน้าของงานอย่างใกล้ชิด พร้อมอัปเดตให้ลูกค้าทราบทุกขั้นตอน</li>
+                <li>บริการครบวงจร ตั้งแต่การออกแบบ การพัฒนา ไปจนถึงการโฮสต์และส่งมอบเว็บไซต์พร้อมใช้งาน</li>
+            </ul>   
+        </div>
+    </section>
+
+    <section class="packages-section" id="packages-section">
+        <h2>แพ็กเกจบริการของเรา</h2>
+        <div class="packages-container">
+            <!-- Basic -->
+            <div class="package-card fade-in-package basic">
+                <h3>Basic</h3>
+                <p class="price">2,000–5,000 ฿</p>
+                <ul>
+                    <li>หน้าเว็บ 1–3 หน้า</li>
+                    <li>Responsive Design</li>
+                    <li>Form ติดต่อ</li>
+                    <li>Static HTML/CSS/JS</li>
+                    <li>SEO พื้นฐาน</li>
+                </ul>
+                <p class="note">เหมาะกับเว็บโปรไฟล์หรือธุรกิจเล็ก</p>
+            </div>
+
+            <!-- Standard -->
+            <div class="package-card fade-in-package standard">
+                <h3>Standard</h3>
+                <p class="price">9,000–15,000 ฿</p>
+                <ul>
+                    <li>หน้าเว็บ 4–6 หน้า</li>
+                    <li>ระบบตะกร้าสินค้า (Cart System)</li>
+                    <li>Payment Gateway (Optional)</li>
+                    <li>Dynamic Content (Backend + DB)</li>
+                    <li>CMS พื้นฐาน (Optional)</li>
+                </ul>
+                <p class="note">เหมาะกับร้านค้าออนไลน์ขนาดเล็ก–กลาง</p>
+            </div>
+
+            <!-- Premium -->
+            <div class="package-card fade-in-package premium">
+                <h3>Premium</h3>
+                <p class="price">20,000–30,000 ฿</p>
+                <ul>
+                    <li>หน้าเว็บ 6–10 หน้า</li>
+                    <li>Responsive + SEO ครบ</li>
+                    <li>CMS จัดการเนื้อหา</li>
+                    <li>ระบบฟอร์มหลายแบบ</li>
+                    <li>ระบบสมาชิก/Login</li>
+                </ul>
+                <p class="note">เหมาะกับธุรกิจขนาดกลาง</p>
+            </div>
+
+            <!-- Ultimate -->
+            <div class="package-card fade-in-package ultimate">
+                <h3>Ultimate</h3>
+                <p class="price">40,000+ ฿</p>
+                <ul>
+                    <li>หน้าเว็บไม่จำกัด</li>
+                    <li>Custom Design & UX/UI</li>
+                    <li>ระบบซับซ้อน (สมาชิก, จอง, สั่งซื้อ)</li>
+                    <li>SEO ขั้นสูง + Analytics</li>
+                    <li>Hosting + Maintenance 1 ปี</li>
+                </ul>
+                <p class="note">เหมาะกับธุรกิจใหญ่ / ครบวงจร</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>ติดต่อเรา</h2>
+
+        <!-- กล่องฟอร์มอยู่ด้านบน -->
+        <div class="contact-box contact-form">
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="ชื่อ" required>
+            <input type="email" name="email" placeholder="อีเมล" required>
+            <input type="text" name="subject" placeholder="หัวข้อ" required>
+            <textarea name="message" placeholder="ข้อความ" required></textarea>
+            <label class="subscribe">
+                <input type="checkbox" name="subscribe">
+                สมัครรับจดหมายข่าวสารจากเรา
+            </label>
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+        </div>
+
+        <!-- กล่องข้อมูลติดต่ออยู่ด้านล่าง -->
+        <div class="contact-box contact-info">
+        <a href="https://line.me/ti/p/krittanonmss" target="_blank">
+            <p><strong>Line:</strong> krittanonmss</p>
+        </a>
+        <a href="tel:0800010240">
+            <p><strong>เบอร์โทร:</strong> 0800010240</p>
+        </a>
+        <a href="https://instagram.com/krittanon_m" target="_blank">
+            <p><strong>Instagram:</strong> krittanon_m</p>
+        </a>
+        <a href="mailto:krittanon.mss@gmail.com">
+            <p><strong>Email:</strong> krittanon.mss@gmail.com</p>
+        </a>
+        </div>
+
+    </div>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
